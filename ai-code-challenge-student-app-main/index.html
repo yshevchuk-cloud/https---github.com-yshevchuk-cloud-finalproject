@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Мій навчальний вебпроєкт">
+  <title>Мій вебпроєкт</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Превента</a>
+<nav>
+  <a href="#about">Про платформу</a>
+  <a href="#materials">Матеріали</a>
+  <a href="#lectures">Лекції</a>
+  <a href="#doctors">Лікарі</a>
+</nav>
+<a class="btn" href="#lectures">
+  <span class="dot"></span>Реєстрація</a>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="ghost" aria-hidden="true">ПРОФІЛАКТИКА</div>
+<svg class="pulse" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90H380l24-8 20 8h60l16-50 26 110 28-130 24 78h40l22-8 20 8H1440"/></svg>
+<div class="wrap">
+<h1>Виявляти ризики раніше, ніж з’являться симптоми</h1>
+<p>Платформа для лікарів: клінічні матеріали, лекції та колеги з восьми галузей медицини — в одному місці.</p>
+<div class="acts"><a class="btn solid" href="#lectures"><span class="dot"></span>Обрати лекцію</a><a class="btn" href="#materials">Читати матеріали</a></div>
+</div>
+<div class="glass g1"><b>Найближча лекція</b><small>Ендокринологія · 24 листопада, 19:00<br>Предіабет: коли діяти</small></div>
+<div class="glass g2"><b>Ваш курс</b><div class="ring"><span>75%</span></div><small>«Ризики після 50» пройдено</small></div>
+</div>
+
+<section class="paper mission" id="about"><div class="wrap">
+<ul class="tabs" role="tablist" aria-label="Про платформу"></ul>
+<div class="panel" role="tabpanel" id="panel" aria-live="polite"></div>
+</div></section>
+
+<section class="values" aria-label="Цінності"><div class="wrap">
+<div class="iris" aria-hidden="true"></div>
+<div class="vals">
+<p><mark>Доказовість</mark> — кожен матеріал спирається на клінічні настанови та рецензований експертом.</p>
+<p><mark>Практичність</mark> — чек-листи й алгоритми, які можна застосувати на наступному прийомі.</p>
+<p><mark>Міждисциплінарність</mark> — ризики пацієнта бачать разом ендокринолог, ревматолог і геріатр.</p>
+</div></div></section>
+
+<section class="paper" id="materials"><div class="wrap">
+<div class="bar"><h2>Матеріали</h2></div>
+<div class="chips" data-for="mat" role="group" aria-label="Фільтр за галуззю"></div>
+<div class="grid" id="mat"></div>
+</div></section>
+
+<section id="lectures" style="background:var(--paper);color:#0a0f18"><div class="wrap">
+<div class="bar"><h2>Найближчі лекції</h2></div>
+<div id="lect"></div>
+</div></section>
+
+<section class="doctors" id="doctors"><div class="wrap">
+<div class="bar"><h2>Лікарі платформи</h2></div>
+<div class="chips" data-for="docs" role="group" aria-label="Фільтр за галуззю"></div>
+<div class="grid docs" id="docs"></div>
+</div></section>
+
+<div class="cta"><div class="wrap"><h2>Профілактика починається з лікаря</h2><a class="btn solid" href="#lectures"><span class="dot"></span>Зареєструватись на лекцію</a></div></div>
+</main>
+<footer><div class="wrap"><span>© 2026 Превента</span><span>Матеріали призначені для медичних працівників і не замінюють клінічних настанов.</span></div></footer>
+
+<dialog id="dlg"><form method="dialog" id="frm">
+<h3>Реєстрація на лекцію</h3><p id="dt"></p>
+<label>Ім’я та прізвище<input name="n" required autocomplete="name"></label>
+<label>Електронна пошта<input name="e" type="email" required autocomplete="email"></label>
+<label>Спеціальність<input name="s" autocomplete="off"></label>
+<div class="row"><button class="btn" value="cancel" formnovalidate>Скасувати</button><button class="btn solid" id="go" value="ok">Зареєструватись</button></div>
+</form><p class="ok" id="done" hidden></p></dialog>
+
+<script src="script.js"></script>
+
+  <footer>
+    <!-- Підвал сайту, якщо він потрібен -->
+  </footer>
+</body>
+</html>
